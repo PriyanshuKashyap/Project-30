@@ -10,9 +10,9 @@ class Box extends BaseClass {
     this.red = r;
     this.green = g;
     this.blue = b;
+    this.Visiblity = 255;
     this.colorArg = color(this.red, this.green, this.blue, this.Visiblity);
     //this.image = loadImage("sprites/wood1.png");
-    this.Visiblity = 255;
   }
 
   display() {
