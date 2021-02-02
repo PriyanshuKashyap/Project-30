@@ -10,21 +10,21 @@ class Box extends BaseClass {
     this.red = r;
     this.green = g;
     this.blue = b;
-    this.color = color(this.red, this.green, this.blue, this.Visiblity);
+    this.colorArg = color(this.red, this.green, this.blue, this.Visiblity);
     //this.image = loadImage("sprites/wood1.png");
     this.Visiblity = 255;
   }
 
   display() {
     if (this.body.speed < 3) {
-      fill(this.color);
+      fill(this.colorArg);
       rect(this.body.position.x, this.body.position.y, this.width, this.height);
     } else {
       World.remove(world, this.body);
       push();
       this.Visibility = this.Visibility - 5;
       //this.color = rgb(r, g, b, this.Visiblity);
-      fill(this.color);
+      fill(this.colorArg);
       pop();
       //console.log(this.Visiblity);
       
@@ -33,5 +33,7 @@ class Box extends BaseClass {
     //console.log(this.color);
     
   }
+
+};
 
 };
