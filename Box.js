@@ -35,5 +35,3 @@ class Box extends BaseClass {
   }
 
 };
-
-};
